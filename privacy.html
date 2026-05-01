@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Baniyagiri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="/"><span class="brand-mark">B</span>Baniyagiri</a>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective: 1 May 2026</p>
+
+    <p>
+      This policy explains what Baniyagiri ("we", "the app") collects when
+      you use it, why, and what control you have over it. We do not sell
+      your data and we do not show ads. The only reason we collect anything
+      is to make the app work for you.
+    </p>
+
+    <h2>1. What we collect</h2>
+
+    <h3>1.1 Account information</h3>
+    <p>
+      When you sign in with Google, we receive your <strong>email address</strong>
+      and <strong>display name</strong> from Firebase Authentication.
+      We use these to identify you across devices and to display friendly
+      names when other users share expenses with you.
+    </p>
+
+    <h3>1.2 Expense data you enter</h3>
+    <p>
+      Anything you record in the app — expense titles, amounts, dates,
+      categories, who paid, who shares the cost, settlement records, and
+      groups you create — is stored on our servers so that it can sync
+      across your devices and surface to people you split bills with.
+    </p>
+
+    <h3>1.3 Bulk imports (CSV / PDF)</h3>
+    <p>
+      When you upload a bank statement, the file is parsed on our servers
+      to extract transactions. <strong>The file itself is not retained</strong>
+      after parsing. The extracted transactions become your expense records
+      under your account and follow the rules above.
+    </p>
+
+    <h3>1.4 Server logs</h3>
+    <p>
+      Our hosting provider records request metadata for operational and
+      security purposes — IP address, timestamps, requested paths,
+      response codes. These logs are retained for up to 30 days and are
+      used only to diagnose problems and detect abuse.
+    </p>
+
+    <h2>2. Where your data lives</h2>
+    <p>
+      Baniyagiri runs on Google Cloud in the <strong>europe-west4</strong>
+      region (Eemshaven, Netherlands). Data in transit between your device
+      and our servers is encrypted with TLS. Data at rest in our database
+      is encrypted at the storage layer by Google Cloud.
+    </p>
+
+    <h2>3. Third parties</h2>
+    <p>We use the following Google services to run the app:</p>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Data shared</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Authentication</td>
+          <td>Sign you in with Google</td>
+          <td>Email, display name, hashed identifiers</td>
+        </tr>
+        <tr>
+          <td>Google Cloud Run / Cloud SQL</td>
+          <td>App hosting and database</td>
+          <td>All data described in section 1</td>
+        </tr>
+        <tr>
+          <td>Google Gemini API</td>
+          <td>Identify which CSV columns hold transaction data</td>
+          <td>Column headers and a small random sample of rows from
+            the CSV being imported &mdash; never the full file</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      We do not share your data with third-party advertisers, analytics
+      providers, or marketers.
+    </p>
+
+    <h2>4. Your rights</h2>
+
+    <h3>4.1 Access &amp; export</h3>
+    <p>
+      Email <a href="mailto:gupta.karan.11@gmail.com">gupta.karan.11@gmail.com</a>
+      from the email address tied to your account, and we will send you a
+      copy of your data within 30 days.
+    </p>
+
+    <h3>4.2 Deletion</h3>
+    <p>
+      To delete your account and all associated data, email the address
+      above from your account email. We will purge your records within
+      30 days. Data your friends have separately recorded (for example,
+      a friend's record of an expense you shared with them) remains under
+      their account.
+    </p>
+
+    <h3>4.3 Correction</h3>
+    <p>
+      You can edit or delete any expense, settlement, or group from inside
+      the app at any time.
+    </p>
+
+    <h2>5. Children</h2>
+    <p>
+      Baniyagiri is not directed at children under 13, and we do not
+      knowingly collect their data.
+    </p>
+
+    <h2>6. Changes to this policy</h2>
+    <p>
+      If we change anything material about how we handle your data, we
+      will update this page and bump the effective date at the top.
+      Continued use of the app after that constitutes acceptance.
+    </p>
+
+    <h2>7. Contact</h2>
+    <p>
+      Questions? Email
+      <a href="mailto:gupta.karan.11@gmail.com">gupta.karan.11@gmail.com</a>.
+    </p>
+  </main>
+  <footer>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <span class="muted">© 2026 Baniyagiri</span>
+  </footer>
+</body>
+</html>
